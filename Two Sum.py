@@ -4,9 +4,12 @@ class Solution:
         me = {}
 
         for i, num in enumerate(nums):
+            print(num)
             if (target-num) in me:
                 ret.append(i)
                 ret.append(me[target-num])
             me[num] = i
+
+            
         
         return ret
